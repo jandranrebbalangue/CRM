@@ -16,8 +16,8 @@ function App(): JSX.Element {
         <Routes>
           <Route path="/" element={<List />} />
           <Route path="/add" element={<Add />} />
-          <Route path="/user/:id" element={<View />} />
-          <Route path="/user/edit/:id" element={<Edit />} />
+          <Route path="/client/:id" element={<View />} />
+          <Route path="/client/edit/:id" element={<Edit />} />
         </Routes>
       </BrowserRouter>
     </React.Suspense>

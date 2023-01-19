@@ -34,14 +34,14 @@ const Item: React.FC<ClientsProps> = ({ name, contact, avatar, organization, ass
                   variant="outline-primary"
                   size="sm"
                   className="me-2"
-                  onClick={() => { navigate(`/user/edit/${id}`); }}
+                  onClick={() => { navigate(`/client/edit/${id}`); }}
                 >
                   Edit
                 </Button>
                 <Button
                   variant="outline-primary"
                   size="sm"
-                  onClick={() => { navigate(`/user/${id}`); }}
+                  onClick={() => { navigate(`/client/${id}`); }}
                 >
                   View
                 </Button>
