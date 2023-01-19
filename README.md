@@ -1,4 +1,4 @@
-This is an technical exam for express-graphql project
+This is an technical assesment for mirtech
 
 ## Development
 
