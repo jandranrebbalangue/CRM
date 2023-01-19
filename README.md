@@ -20,3 +20,4 @@ This is an technical assesment for mirtech
    ```bash
    yarn start
    ```
+You can access now the application through http://localhost:3000/
