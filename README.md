@@ -5,7 +5,7 @@ This is an technical assesment for mirtech
 1. Clone project
 
    ```bash
-   git clone git@github.com:jandranrebbalangue/CRM.git
+   git clone https://github.com/jandranrebbalangue/CRM.git
    cd CRM
    ```
 
