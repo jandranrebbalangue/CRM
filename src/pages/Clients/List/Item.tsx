@@ -63,10 +63,9 @@ const Item: React.FC<ClientsProps> = ({ name, contact, avatar, organization, ass
               </ul>
             </Col>
             <Col>
-
               <ul className="list-unstyled">
                 <li>
-                  Assigned User: <strong>{assignedUser}</strong>
+                  Assigned user: <strong>{assignedUser}</strong>
                 </li>
               </ul>
             </Col>

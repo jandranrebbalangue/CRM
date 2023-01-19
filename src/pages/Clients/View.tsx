@@ -56,7 +56,7 @@ const View = (): ReactJSXElement => {
               <Col>
                 <ul className="list-unstyled">
                   <li>
-                    Assigned User: <strong>{currentClient.assignedUser}</strong>
+                    Assigned user: <strong>{currentClient.assignedUser}</strong>
                   </li>
                 </ul>
               </Col>
