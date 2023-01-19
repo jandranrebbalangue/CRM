@@ -34,7 +34,13 @@ const AddClientForm = (): ReactJSXElement => {
   const { handleSubmit, getValues, reset, formState, watch } = methods;
   const { isSubmitting, isDirty } = formState;
   const status = watch("status");
-
+  const assignedUser = watch("assignedUser")
+  const getUserData = localStorage.getItem(USER_KEY) as string
+  const data = JSON.parse(getUserData)
+  const assignedUserOptions = data?.filter((item: ClientsProps) => item.id !== id).map((item: ClientsProps) => ({
+    label: item.name,
+    value: item.name
+  }));
 
   const onSubmit: SubmitHandler<FormValues> = data => {
     try {
@@ -92,9 +98,9 @@ const AddClientForm = (): ReactJSXElement => {
           setFormError(error.message)
         }
       }
-
       setProcessing(false);
     };
+
     if (id != null) getItem();
     else setProcessing(false);
 
@@ -122,7 +128,6 @@ const AddClientForm = (): ReactJSXElement => {
             <Input
               id="name"
               label="Name"
-              required={true}
               horizontal={true}
               isDisabled={typeof id === "string"}
             />
@@ -130,29 +135,24 @@ const AddClientForm = (): ReactJSXElement => {
               id="contact"
               label="Contact"
               type="number"
-              required={true}
               horizontal={true}
               isDisabled={typeof id === "string"}
             />
             <Input
               id="organization"
               label="Organization"
-              required={true}
               horizontal={true}
               isDisabled={typeof id === "string"}
             />
-            <Input
-              id="assignedUser"
-              label="Assigned User"
-              required={true}
+            <Select id="assignedUser" label="Assigned User"
               horizontal={true}
+              options={assignedUserOptions}
               isDisabled={typeof id === "string"}
-            />
+              value={assignedUser} />
             <Select
               id="status"
               label="Status"
               options={STATUS_OPTIONS}
-              required={true}
               horizontal={true}
               value={status}
             />

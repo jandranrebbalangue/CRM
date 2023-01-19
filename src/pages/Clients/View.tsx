@@ -48,10 +48,12 @@ const View = (): ReactJSXElement => {
                   <li>
                     Organization: <strong>{currentClient.organization}</strong>
                   </li>
+                  <li>
+                    Creation Date: <strong>{currentClient.createdBy}</strong>
+                  </li>
                 </ul>
               </Col>
               <Col>
-
                 <ul className="list-unstyled">
                   <li>
                     Assigned User: <strong>{currentClient.assignedUser}</strong>
