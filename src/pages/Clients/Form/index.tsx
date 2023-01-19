@@ -62,8 +62,8 @@ const AddClientForm = (): ReactJSXElement => {
 
       if (id != null) {
         const currentData = JSON.parse(getClientsData);
-        const d = currentData.find((item: ClientsProps) => item.id === id);
-        d.status = data.status;
+        let d = currentData.find((item: ClientsProps) => item.id === id);
+        d = data;
         const idx = currentData.findIndex((item: ClientsProps) => item.id === id);
         currentData[idx] = d;
         localStorage.setItem(USER_KEY, JSON.stringify(currentData))
@@ -129,25 +129,21 @@ const AddClientForm = (): ReactJSXElement => {
               id="name"
               label="Name"
               horizontal={true}
-              isDisabled={typeof id === "string"}
             />
             <Input
               id="contact"
               label="Contact"
               type="number"
               horizontal={true}
-              isDisabled={typeof id === "string"}
             />
             <Input
               id="organization"
               label="Organization"
               horizontal={true}
-              isDisabled={typeof id === "string"}
             />
             <Select id="assignedUser" label="Assigned User"
               horizontal={true}
               options={assignedUserOptions}
-              isDisabled={typeof id === "string"}
               value={assignedUser} />
             <Select
               id="status"
