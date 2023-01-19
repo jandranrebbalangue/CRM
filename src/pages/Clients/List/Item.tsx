@@ -8,8 +8,6 @@ import Avatar from "../../components/Avatar";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
 
-
-
 const Item: React.FC<ClientsProps> = ({ name, contact, avatar, organization, assignedUser, status, id, createdBy }) => {
   const navigate = useNavigate();
 
