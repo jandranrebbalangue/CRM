@@ -1,0 +1,28 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+@import "bootstrap/scss/bootstrap";
+
+html,
+body {
+  height: 100%;
+  font-family: Roboto;
+  font-size: medium;
+  margin: 0;
+  padding: 0;
+  color: #222e36;
+}
+
+#root {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}

@@ -1,0 +1,65 @@
+import { library, config } from "@fortawesome/fontawesome-svg-core";
+import {
+  faArrowLeft,
+  faChevronLeft,
+  faComment,
+  faFileContract,
+  faHome,
+  faList,
+  faMapMarkerAlt,
+  faMotorcycle,
+  faSearch,
+  faShoppingBag,
+  faShoppingCart,
+  faTimes,
+  faUser,
+  faMinus,
+  faPlus,
+  faSave,
+  faFilter,
+  faPencilAlt,
+  faEye,
+  faBan,
+  faEdit,
+  faTrash,
+  faInfoCircle,
+  faCalendarCheck,
+  faHistory,
+  faStream,
+  faDownload,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(
+  faChevronLeft,
+  faComment,
+  faFileContract,
+  faHome,
+  faList,
+  faMapMarkerAlt,
+  faSearch,
+  faShoppingCart,
+  faTimes,
+  faUser,
+  faArrowLeft,
+  faMotorcycle,
+  faShoppingBag,
+  faMinus,
+  faPlus,
+  faSave,
+  faFilter,
+  faPencilAlt,
+  faEye,
+  faBan,
+  faEdit,
+  faTrash,
+  faInfoCircle,
+  faCalendarCheck,
+  faHistory,
+  faStream,
+  faDownload
+);
+
+// Disable inline css
+// https://fontawesome.com/how-to-use/on-the-web/other-topics/security
+config.autoAddCss = false;
+
